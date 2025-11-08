@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Travel Destination Guide — Demo</title>
+  <link rel="stylesheet" href="Travel-dest-guide.css">
+</head>
+
+<body>
+  <header>
+    <h1>Explorerly — Travel Destination Guide</h1>
+    <p>Discover top places, plan your trip, and learn about culture & cuisine.</p>
+  </header>
+
+  <div class="container">
+
+    <aside class="sidebar">
+      <h2>Quick Links</h2>
+
+      <ul class="nav-list">
+        <li><a href="#top-places">Top Places</a></li>
+        <li><a href="#itinerary">Sample Itinerary</a></li>
+        <li><a href="#map" target="_blank" rel="noopener">Interactive Map</a></li>
+        <li><a href="#booking">Booking Form</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="top-places">
+        <h2>Top Destinations</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Alps, Switzerland</h3>
+            <img src="https://www.shutterstock.com/image-photo/sunrise-view-on-bernese-range-600nw-1446568199.jpg" alt="Matterhorn mountain">
+            <p>Alpine vistas, skiing, and glacier hikes.</p>
+            <a href="https://en.wikipedia.org/wiki/Alps" target="_blank">Read more</a>
+          </div>
+
+          <div class="card">
+            <h3>Kyoto, Japan</h3>
+            <img src="https://handluggageonly.co.uk/wp-content/uploads/2017/05/iStock-509472000.jpg" alt="Kyoto temple">
+            <p>Shrines, temples, and seasonal cherry blossoms.</p>
+            <a href="https://en.wikipedia.org/wiki/Kyoto" target="_blank">Read more</a>
+          </div>
+
+          <div class="card">
+            <h3>Marrakesh, Morocco</h3>
+            <img src="https://www.visitmorocco.com/sites/default/files/styles/thumbnail_destination_background_top5/public/thumbnails/image/koutoubia-mosque-minaret-located-at-medina-quarter-of-marrakesh-morocco-balate-dorin.jpg?itok=08hAHERp" alt="Marrakesh market">
+            <p>Vibrant souks, gardens, and historic palaces.</p>
+            <a href="https://en.wikipedia.org/wiki/Marrakesh" target="_blank">Read more</a>
+          </div>
+
+          <div class="card">
+            <h3>Beijing, China</h3>
+            <img src="https://www.iroamly.com/images/beijing-china-cover.webp" alt="Great Wall of China">
+            <p>Modern asian culture, scenery,practices</p>
+            <a href="https://en.wikipedia.org/wiki/Beijing" target="_blank">Read more</a>
+          </div>
+        </div>
+
+        <h3>Top 5 Traveler Tips</h3>
+        <ol>
+          <li>Research local customs and language basics.</li>
+          <li>Book accommodations in advance during peak season.</li>
+          <li>Carry an offline map and a portable charger.</li>
+          <li>Try local food at markets for cultural insight.</li>
+          <li>Purchase travel insurance for peace of mind.</li>
+        </ol>
+      </section>
+
+      <section id="itinerary">
+        <h2>Sample 7-Day Itinerary</h2>
+        <p>Below is a sample plan combining mountains, cities, and local culture.</p>
+        <table>
+          <caption>7-Day Plan Overview</caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Region</th>
+              <th>Highlights</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>City</td>
+              <td>Arrival, local walking tour</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td rowspan="2">Mountains</td>
+              <td>Hiking trails and scenic viewpoint</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Cable car experience</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Village</td>
+              <td>Local homestay & market visit</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td colspan="2">Day trip to nearby UNESCO site</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Tips: Pack layers, carry cash in small bills, respect local dress codes.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="map">
+        <h2>Map & Resources</h2>
+        <p class="more-info">Use the external interactive map for route planning.</p>
+        <p><a href="https://www.openstreetmap.org" target="_blank">OpenStreetMap</a></p>
+
+        <h3>Currency & Time</h3>
+        <p>Always check exchange rates and local time before traveling.</p>
+      </section>
+
+      <section id="booking">
+        <h2>Booking Form</h2>
+        <form action="" method="post">
+
+          <fieldset>
+            <legend>Traveler details</legend>
+
+            <div class="form-row">
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required>
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <label for="destination">Preferred destination</label>
+            <select id="destination" name="destination">
+              <option value="mlps">Alps, Switzerland</option>
+              <option value="kyoto">Kyoto, Japan</option>
+              <option value="marrakech">Marrakech, Morocco</option>
+              <option value="beijing">Beijing, China</option>
+            </select>
+
+            <label for="notes">Special requests</label>
+            <textarea id="notes" name="notes" placeholder="Dietary requirements, accessibility needs, etc."></textarea>
+
+            <fieldset>
+              <legend>Travel options</legend>
+              <label><input type="radio" name="plan" value="standard"> Standard package</label>
+              <label><input type="radio" name="plan" value="deluxe"> Deluxe package</label>
+            </fieldset>
+
+            <label><input type="checkbox" name="newsletter" value="yes"> Subscribe to travel newsletter</label>
+
+            <button type="submit">Request Booking</button>
+          </fieldset>
+        </form>
+
+      </section>
+
+      <section id="packing-checklist">
+        <h2>Packing Checklist</h2>
+        <p>Two-column list combining ul and table-like layout using divs.</p>
+        <div>
+          <ul>
+            <li>Passport & ID</li>
+            <li>Tickets & confirmations</li>
+            <li>Phone & charger</li>
+          </ul>
+          <ul>
+            <li>Weather-appropriate clothing</li>
+            <li>Medication & first-aid</li>
+            <li>Adapter & power bank</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer id="footer">
+    <p><span title="Current year">@2025</span> Explorerly</p>
+  </footer>
+
+  
+
+</body>
+</html>
